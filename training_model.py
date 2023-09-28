@@ -27,7 +27,7 @@ answer_labels = keras.utils.to_categorical(np.arange(len(answers)), num_classes=
 
 model.fit(input_sequences, answer_labels, epochs=4000)
 
-model.save('model_1.keras')
+model.save('model_name.keras')
 
 
 def generate_response(user_input):
