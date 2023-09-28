@@ -31,7 +31,7 @@ input_sequences = pad_sequences(input_sequences)
 
 answer_labels = keras.utils.to_categorical(np.arange(len(answers)), num_classes=len(answers))
 
-model = tf.keras.models.load_model("model_700.keras")
+model = tf.keras.models.load_model("model_name.keras")
 def generate_response(user_input):
     input_seq = tokenizer.texts_to_sequences([user_input])
     input_seq = pad_sequences(input_seq, maxlen=input_sequences.shape[1])
